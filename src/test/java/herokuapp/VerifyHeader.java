@@ -22,12 +22,11 @@ public class VerifyHeader {
 	WebDriver driver;
 	String strAppURL,nodeURL;
 	
-
-	@BeforeTest
+	//Jenkin setup
 	public void initSetup() throws MalformedURLException
 	{
-	nodeURL = "http://192.168.0.3:5617/wd/hub";
 	strAppURL = "https://the-internet.herokuapp.com/challenging_dom";
+	nodeURL = "http://192.168.0.3:5617/wd/hub";
 	DesiredCapabilities capability = DesiredCapabilities .firefox();
 	capability.setBrowserName("firefox");
 	capability.setPlatform(Platform.XP);
@@ -38,7 +37,8 @@ public class VerifyHeader {
 	public void launchApp()
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
-		driver.get(strAppURL);
+		driver = new ChromeDriver();
+		driver.get("https://the-internet.herokuapp.com/challenging_dom");
 		driver.manage().window().maximize();
 	}
 	

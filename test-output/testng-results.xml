@@ -1,33 +1,783 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="40" passed="40">
   <reporter-output>
+    <line>
+      <![CDATA[Lorem]]>
+    </line>
+    <line>
+      <![CDATA[Ipsum]]>
+    </line>
+    <line>
+      <![CDATA[Dolor]]>
+    </line>
+    <line>
+      <![CDATA[Sit]]>
+    </line>
+    <line>
+      <![CDATA[Amet]]>
+    </line>
+    <line>
+      <![CDATA[Diceret]]>
+    </line>
+    <line>
+      <![CDATA[Action]]>
+    </line>
+    <line>
+      <![CDATA[Footer window title is: Elemental Selenium: Receive a Free, Weekly Tip on Using Selenium like a Pro]]>
+    </line>
+    <line>
+      <![CDATA[Home Page window title is: The Internet]]>
+    </line>
+    <line>
+      <![CDATA[First Button Name is: bar & background color is: rgba(43, 166, 203, 1)]]>
+    </line>
+    <line>
+      <![CDATA[Second Button Name is: baz & background color is: rgba(198, 15, 19, 1)]]>
+    </line>
+    <line>
+      <![CDATA[Third Button Name is: qux & background color is: rgba(93, 164, 35, 1)]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Delete Button of Iuvaret4 Record]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Edit Button of Iuvaret4 Record]]>
+    </line>
+    <line>
+      <![CDATA[Powered by Elemental Selenium]]>
+    </line>
+    <line>
+      <![CDATA[==============Row:1 Data================]]>
+    </line>
+    <line>
+      <![CDATA[Iuvaret0]]>
+    </line>
+    <line>
+      <![CDATA[Apeirian0]]>
+    </line>
+    <line>
+      <![CDATA[Adipisci0]]>
+    </line>
+    <line>
+      <![CDATA[Definiebas0]]>
+    </line>
+    <line>
+      <![CDATA[Consequuntur0]]>
+    </line>
+    <line>
+      <![CDATA[Phaedrum0]]>
+    </line>
+    <line>
+      <![CDATA[edit delete]]>
+    </line>
+    <line>
+      <![CDATA[==============Row:2 Data================]]>
+    </line>
+    <line>
+      <![CDATA[Iuvaret1]]>
+    </line>
+    <line>
+      <![CDATA[Apeirian1]]>
+    </line>
+    <line>
+      <![CDATA[Adipisci1]]>
+    </line>
+    <line>
+      <![CDATA[Definiebas1]]>
+    </line>
+    <line>
+      <![CDATA[Consequuntur1]]>
+    </line>
+    <line>
+      <![CDATA[Phaedrum1]]>
+    </line>
+    <line>
+      <![CDATA[edit delete]]>
+    </line>
+    <line>
+      <![CDATA[==============Row:3 Data================]]>
+    </line>
+    <line>
+      <![CDATA[Iuvaret2]]>
+    </line>
+    <line>
+      <![CDATA[Apeirian2]]>
+    </line>
+    <line>
+      <![CDATA[Adipisci2]]>
+    </line>
+    <line>
+      <![CDATA[Definiebas2]]>
+    </line>
+    <line>
+      <![CDATA[Consequuntur2]]>
+    </line>
+    <line>
+      <![CDATA[Phaedrum2]]>
+    </line>
+    <line>
+      <![CDATA[edit delete]]>
+    </line>
+    <line>
+      <![CDATA[==============Row:4 Data================]]>
+    </line>
+    <line>
+      <![CDATA[Iuvaret3]]>
+    </line>
+    <line>
+      <![CDATA[Apeirian3]]>
+    </line>
+    <line>
+      <![CDATA[Adipisci3]]>
+    </line>
+    <line>
+      <![CDATA[Definiebas3]]>
+    </line>
+    <line>
+      <![CDATA[Consequuntur3]]>
+    </line>
+    <line>
+      <![CDATA[Phaedrum3]]>
+    </line>
+    <line>
+      <![CDATA[edit delete]]>
+    </line>
+    <line>
+      <![CDATA[==============Row:5 Data================]]>
+    </line>
+    <line>
+      <![CDATA[Iuvaret4]]>
+    </line>
+    <line>
+      <![CDATA[Apeirian4]]>
+    </line>
+    <line>
+      <![CDATA[Adipisci4]]>
+    </line>
+    <line>
+      <![CDATA[Definiebas4]]>
+    </line>
+    <line>
+      <![CDATA[Consequuntur4]]>
+    </line>
+    <line>
+      <![CDATA[Phaedrum4]]>
+    </line>
+    <line>
+      <![CDATA[edit delete]]>
+    </line>
+    <line>
+      <![CDATA[==============Row:6 Data================]]>
+    </line>
+    <line>
+      <![CDATA[Iuvaret5]]>
+    </line>
+    <line>
+      <![CDATA[Apeirian5]]>
+    </line>
+    <line>
+      <![CDATA[Adipisci5]]>
+    </line>
+    <line>
+      <![CDATA[Definiebas5]]>
+    </line>
+    <line>
+      <![CDATA[Consequuntur5]]>
+    </line>
+    <line>
+      <![CDATA[Phaedrum5]]>
+    </line>
+    <line>
+      <![CDATA[edit delete]]>
+    </line>
+    <line>
+      <![CDATA[==============Row:7 Data================]]>
+    </line>
+    <line>
+      <![CDATA[Iuvaret6]]>
+    </line>
+    <line>
+      <![CDATA[Apeirian6]]>
+    </line>
+    <line>
+      <![CDATA[Adipisci6]]>
+    </line>
+    <line>
+      <![CDATA[Definiebas6]]>
+    </line>
+    <line>
+      <![CDATA[Consequuntur6]]>
+    </line>
+    <line>
+      <![CDATA[Phaedrum6]]>
+    </line>
+    <line>
+      <![CDATA[edit delete]]>
+    </line>
+    <line>
+      <![CDATA[==============Row:8 Data================]]>
+    </line>
+    <line>
+      <![CDATA[Iuvaret7]]>
+    </line>
+    <line>
+      <![CDATA[Apeirian7]]>
+    </line>
+    <line>
+      <![CDATA[Adipisci7]]>
+    </line>
+    <line>
+      <![CDATA[Definiebas7]]>
+    </line>
+    <line>
+      <![CDATA[Consequuntur7]]>
+    </line>
+    <line>
+      <![CDATA[Phaedrum7]]>
+    </line>
+    <line>
+      <![CDATA[edit delete]]>
+    </line>
+    <line>
+      <![CDATA[==============Row:9 Data================]]>
+    </line>
+    <line>
+      <![CDATA[Iuvaret8]]>
+    </line>
+    <line>
+      <![CDATA[Apeirian8]]>
+    </line>
+    <line>
+      <![CDATA[Adipisci8]]>
+    </line>
+    <line>
+      <![CDATA[Definiebas8]]>
+    </line>
+    <line>
+      <![CDATA[Consequuntur8]]>
+    </line>
+    <line>
+      <![CDATA[Phaedrum8]]>
+    </line>
+    <line>
+      <![CDATA[edit delete]]>
+    </line>
+    <line>
+      <![CDATA[==============Row:10 Data================]]>
+    </line>
+    <line>
+      <![CDATA[Iuvaret9]]>
+    </line>
+    <line>
+      <![CDATA[Apeirian9]]>
+    </line>
+    <line>
+      <![CDATA[Adipisci9]]>
+    </line>
+    <line>
+      <![CDATA[Definiebas9]]>
+    </line>
+    <line>
+      <![CDATA[Consequuntur9]]>
+    </line>
+    <line>
+      <![CDATA[Phaedrum9]]>
+    </line>
+    <line>
+      <![CDATA[edit delete]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8691" started-at="2017-07-01T13:18:11Z" finished-at="2017-07-01T13:18:20Z">
+  <suite name="Suite" duration-ms="107903" started-at="2017-07-02T11:17:14Z" finished-at="2017-07-02T11:19:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8691" started-at="2017-07-01T13:18:11Z" finished-at="2017-07-01T13:18:20Z">
-      <class name="herokuapp.VerifyHeader">
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="launchApp" duration-ms="8485" started-at="2017-07-01T18:48:11Z" finished-at="2017-07-01T18:48:20Z">
+    <test name="Testcase 1: ColumnHeaders" duration-ms="9369" started-at="2017-07-02T11:17:14Z" finished-at="2017-07-02T11:17:23Z">
+      <class name="herokuapp.ColumnHeaders">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:herokuapp.ColumnHeaders@5c7fa833]" name="launchApp" duration-ms="8772" started-at="2017-07-02T16:47:14Z" finished-at="2017-07-02T16:47:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="maximizeApp()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="maximizeApp" duration-ms="20" started-at="2017-07-01T18:48:20Z" finished-at="2017-07-01T18:48:20Z">
+        <test-method status="PASS" signature="maximizeApp()[pri:0, instance:herokuapp.ColumnHeaders@5c7fa833]" name="maximizeApp" duration-ms="24" started-at="2017-07-02T16:47:22Z" finished-at="2017-07-02T16:47:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- maximizeApp -->
-        <test-method status="PASS" signature="verifyHeaderTxt()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="verifyHeaderTxt" duration-ms="57" started-at="2017-07-01T18:48:20Z" finished-at="2017-07-01T18:48:20Z">
+        <test-method status="PASS" signature="verifyColumnHeader()[pri:0, instance:herokuapp.ColumnHeaders@5c7fa833]" name="verifyColumnHeader" duration-ms="434" started-at="2017-07-02T16:47:22Z" finished-at="2017-07-02T16:47:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Lorem]]>
+            </line>
+            <line>
+              <![CDATA[Ipsum]]>
+            </line>
+            <line>
+              <![CDATA[Dolor]]>
+            </line>
+            <line>
+              <![CDATA[Sit]]>
+            </line>
+            <line>
+              <![CDATA[Amet]]>
+            </line>
+            <line>
+              <![CDATA[Diceret]]>
+            </line>
+            <line>
+              <![CDATA[Action]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyColumnHeader -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:herokuapp.ColumnHeaders@5c7fa833]" name="closeBrowser" duration-ms="109" started-at="2017-07-02T16:47:23Z" finished-at="2017-07-02T16:47:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- herokuapp.ColumnHeaders -->
+    </test> <!-- Testcase 1: ColumnHeaders -->
+    <test name="Testcase 2: ValidateFooterLink" duration-ms="15081" started-at="2017-07-02T11:17:23Z" finished-at="2017-07-02T11:17:38Z">
+      <class name="herokuapp.ValidateFooterLink">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:herokuapp.ValidateFooterLink@7cd62f43]" name="launchApp" duration-ms="8569" started-at="2017-07-02T16:47:23Z" finished-at="2017-07-02T16:47:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="maximizeApp()[pri:0, instance:herokuapp.ValidateFooterLink@7cd62f43]" name="maximizeApp" duration-ms="9" started-at="2017-07-02T16:47:32Z" finished-at="2017-07-02T16:47:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximizeApp -->
+        <test-method status="PASS" signature="verifyFooterLnk()[pri:0, instance:herokuapp.ValidateFooterLink@7cd62f43]" name="verifyFooterLnk" duration-ms="5411" started-at="2017-07-02T16:47:32Z" finished-at="2017-07-02T16:47:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Footer window title is: Elemental Selenium: Receive a Free, Weekly Tip on Using Selenium like a Pro]]>
+            </line>
+            <line>
+              <![CDATA[Home Page window title is: The Internet]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFooterLnk -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:herokuapp.ValidateFooterLink@7cd62f43]" name="closeBrowser" duration-ms="1086" started-at="2017-07-02T16:47:37Z" finished-at="2017-07-02T16:47:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- herokuapp.ValidateFooterLink -->
+    </test> <!-- Testcase 2: ValidateFooterLink -->
+    <test name="Testcase 3: VerifyAnswerCode" duration-ms="10198" started-at="2017-07-02T11:17:38Z" finished-at="2017-07-02T11:17:48Z">
+      <class name="herokuapp.VerifyAnswerCode">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:herokuapp.VerifyAnswerCode@42e26948]" name="launchApp" duration-ms="6991" started-at="2017-07-02T16:47:38Z" finished-at="2017-07-02T16:47:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="maximizeApp()[pri:0, instance:herokuapp.VerifyAnswerCode@42e26948]" name="maximizeApp" duration-ms="12" started-at="2017-07-02T16:47:45Z" finished-at="2017-07-02T16:47:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximizeApp -->
+        <test-method status="PASS" signature="verifyCode()[pri:0, instance:herokuapp.VerifyAnswerCode@42e26948]" name="verifyCode" duration-ms="3041" started-at="2017-07-02T16:47:45Z" finished-at="2017-07-02T16:47:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCode -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:herokuapp.VerifyAnswerCode@42e26948]" name="closeBrowser" duration-ms="146" started-at="2017-07-02T16:47:48Z" finished-at="2017-07-02T16:47:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- herokuapp.VerifyAnswerCode -->
+    </test> <!-- Testcase 3: VerifyAnswerCode -->
+    <test name="Testcase 4: VerifyButtons" duration-ms="9454" started-at="2017-07-02T11:17:48Z" finished-at="2017-07-02T11:17:58Z">
+      <class name="herokuapp.VerifyButtons">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:herokuapp.VerifyButtons@77cd7a0]" name="launchApp" duration-ms="7065" started-at="2017-07-02T16:47:48Z" finished-at="2017-07-02T16:47:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="maximizeApp()[pri:0, instance:herokuapp.VerifyButtons@77cd7a0]" name="maximizeApp" duration-ms="2038" started-at="2017-07-02T16:47:55Z" finished-at="2017-07-02T16:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximizeApp -->
+        <test-method status="PASS" signature="validateButtons()[pri:0, instance:herokuapp.VerifyButtons@77cd7a0]" name="validateButtons" duration-ms="256" started-at="2017-07-02T16:47:57Z" finished-at="2017-07-02T16:47:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[First Button Name is: bar & background color is: rgba(43, 166, 203, 1)]]>
+            </line>
+            <line>
+              <![CDATA[Second Button Name is: baz & background color is: rgba(198, 15, 19, 1)]]>
+            </line>
+            <line>
+              <![CDATA[Third Button Name is: qux & background color is: rgba(93, 164, 35, 1)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateButtons -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:herokuapp.VerifyButtons@77cd7a0]" name="closeBrowser" duration-ms="87" started-at="2017-07-02T16:47:58Z" finished-at="2017-07-02T16:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- herokuapp.VerifyButtons -->
+    </test> <!-- Testcase 4: VerifyButtons -->
+    <test name="Testcase 5: VerifyDeleteFunctionality" duration-ms="12651" started-at="2017-07-02T11:17:58Z" finished-at="2017-07-02T11:18:10Z">
+      <class name="herokuapp.VerifyDeleteFunctionality">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:herokuapp.VerifyDeleteFunctionality@f6c48ac]" name="launchApp" duration-ms="8639" started-at="2017-07-02T16:47:58Z" finished-at="2017-07-02T16:48:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="maximizeApp()[pri:0, instance:herokuapp.VerifyDeleteFunctionality@f6c48ac]" name="maximizeApp" duration-ms="12" started-at="2017-07-02T16:48:06Z" finished-at="2017-07-02T16:48:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximizeApp -->
+        <test-method status="PASS" signature="verifyTableData()[pri:0, instance:herokuapp.VerifyDeleteFunctionality@f6c48ac]" name="verifyTableData" duration-ms="3889" started-at="2017-07-02T16:48:06Z" finished-at="2017-07-02T16:48:10Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Delete Button of Iuvaret4 Record]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTableData -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:herokuapp.VerifyDeleteFunctionality@f6c48ac]" name="closeBrowser" duration-ms="104" started-at="2017-07-02T16:48:10Z" finished-at="2017-07-02T16:48:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- herokuapp.VerifyDeleteFunctionality -->
+    </test> <!-- Testcase 5: VerifyDeleteFunctionality -->
+    <test name="Testcase 6: VerifyEditFunctionality" duration-ms="11105" started-at="2017-07-02T11:18:10Z" finished-at="2017-07-02T11:18:22Z">
+      <class name="herokuapp.VerifyEditFunctionality">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:herokuapp.VerifyEditFunctionality@14bf9759]" name="launchApp" duration-ms="7112" started-at="2017-07-02T16:48:10Z" finished-at="2017-07-02T16:48:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="maximizeApp()[pri:0, instance:herokuapp.VerifyEditFunctionality@14bf9759]" name="maximizeApp" duration-ms="10" started-at="2017-07-02T16:48:18Z" finished-at="2017-07-02T16:48:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximizeApp -->
+        <test-method status="PASS" signature="verifyTableData()[pri:0, instance:herokuapp.VerifyEditFunctionality@14bf9759]" name="verifyTableData" duration-ms="3890" started-at="2017-07-02T16:48:18Z" finished-at="2017-07-02T16:48:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Edit Button of Iuvaret4 Record]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTableData -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:herokuapp.VerifyEditFunctionality@14bf9759]" name="closeBrowser" duration-ms="86" started-at="2017-07-02T16:48:21Z" finished-at="2017-07-02T16:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- herokuapp.VerifyEditFunctionality -->
+    </test> <!-- Testcase 6: VerifyEditFunctionality -->
+    <test name="Testcase 7: VerifyFooterTxt" duration-ms="12940" started-at="2017-07-02T11:18:22Z" finished-at="2017-07-02T11:18:35Z">
+      <class name="herokuapp.VerifyFooterTxt">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:herokuapp.VerifyFooterTxt@402a079c]" name="launchApp" duration-ms="12657" started-at="2017-07-02T16:48:22Z" finished-at="2017-07-02T16:48:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="maximizeApp()[pri:0, instance:herokuapp.VerifyFooterTxt@402a079c]" name="maximizeApp" duration-ms="15" started-at="2017-07-02T16:48:34Z" finished-at="2017-07-02T16:48:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximizeApp -->
+        <test-method status="PASS" signature="verifyColumnHeader()[pri:0, instance:herokuapp.VerifyFooterTxt@402a079c]" name="verifyColumnHeader" duration-ms="107" started-at="2017-07-02T16:48:34Z" finished-at="2017-07-02T16:48:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Powered by Elemental Selenium]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyColumnHeader -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:herokuapp.VerifyFooterTxt@402a079c]" name="closeBrowser" duration-ms="157" started-at="2017-07-02T16:48:34Z" finished-at="2017-07-02T16:48:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- herokuapp.VerifyFooterTxt -->
+    </test> <!-- Testcase 7: VerifyFooterTxt -->
+    <test name="Testcase 8: VerifyHeader" duration-ms="7394" started-at="2017-07-02T11:18:35Z" finished-at="2017-07-02T11:18:42Z">
+      <class name="herokuapp.VerifyHeader">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:herokuapp.VerifyHeader@31a5c39e]" name="launchApp" duration-ms="7113" started-at="2017-07-02T16:48:35Z" finished-at="2017-07-02T16:48:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="maximizeApp()[pri:0, instance:herokuapp.VerifyHeader@31a5c39e]" name="maximizeApp" duration-ms="12" started-at="2017-07-02T16:48:42Z" finished-at="2017-07-02T16:48:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximizeApp -->
+        <test-method status="PASS" signature="verifyHeaderTxt()[pri:0, instance:herokuapp.VerifyHeader@31a5c39e]" name="verifyHeaderTxt" duration-ms="92" started-at="2017-07-02T16:48:42Z" finished-at="2017-07-02T16:48:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeaderTxt -->
-        <test-method status="PASS" signature="verifyHeaderParagraph()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="verifyHeaderParagraph" duration-ms="44" started-at="2017-07-01T18:48:20Z" finished-at="2017-07-01T18:48:20Z">
+        <test-method status="PASS" signature="verifyHeaderParagraph()[pri:0, instance:herokuapp.VerifyHeader@31a5c39e]" name="verifyHeaderParagraph" duration-ms="83" started-at="2017-07-02T16:48:42Z" finished-at="2017-07-02T16:48:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeaderParagraph -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="closeBrowser" duration-ms="54" started-at="2017-07-01T18:48:20Z" finished-at="2017-07-01T18:48:20Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:herokuapp.VerifyHeader@31a5c39e]" name="closeBrowser" is-config="true" duration-ms="90" started-at="2017-07-02T16:48:42Z" finished-at="2017-07-02T16:48:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- herokuapp.VerifyHeader -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Testcase 8: VerifyHeader -->
+    <test name="Testcase 9: VerifyTableData" duration-ms="12335" started-at="2017-07-02T11:18:42Z" finished-at="2017-07-02T11:18:54Z">
+      <class name="herokuapp.VerifyTableData">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:herokuapp.VerifyTableData@5cb9f472]" name="launchApp" duration-ms="7590" started-at="2017-07-02T16:48:42Z" finished-at="2017-07-02T16:48:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="maximizeApp()[pri:0, instance:herokuapp.VerifyTableData@5cb9f472]" name="maximizeApp" duration-ms="17" started-at="2017-07-02T16:48:50Z" finished-at="2017-07-02T16:48:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximizeApp -->
+        <test-method status="PASS" signature="verifyTableData()[pri:0, instance:herokuapp.VerifyTableData@5cb9f472]" name="verifyTableData" duration-ms="4619" started-at="2017-07-02T16:48:50Z" finished-at="2017-07-02T16:48:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[==============Row:1 Data================]]>
+            </line>
+            <line>
+              <![CDATA[Iuvaret0]]>
+            </line>
+            <line>
+              <![CDATA[Apeirian0]]>
+            </line>
+            <line>
+              <![CDATA[Adipisci0]]>
+            </line>
+            <line>
+              <![CDATA[Definiebas0]]>
+            </line>
+            <line>
+              <![CDATA[Consequuntur0]]>
+            </line>
+            <line>
+              <![CDATA[Phaedrum0]]>
+            </line>
+            <line>
+              <![CDATA[edit delete]]>
+            </line>
+            <line>
+              <![CDATA[==============Row:2 Data================]]>
+            </line>
+            <line>
+              <![CDATA[Iuvaret1]]>
+            </line>
+            <line>
+              <![CDATA[Apeirian1]]>
+            </line>
+            <line>
+              <![CDATA[Adipisci1]]>
+            </line>
+            <line>
+              <![CDATA[Definiebas1]]>
+            </line>
+            <line>
+              <![CDATA[Consequuntur1]]>
+            </line>
+            <line>
+              <![CDATA[Phaedrum1]]>
+            </line>
+            <line>
+              <![CDATA[edit delete]]>
+            </line>
+            <line>
+              <![CDATA[==============Row:3 Data================]]>
+            </line>
+            <line>
+              <![CDATA[Iuvaret2]]>
+            </line>
+            <line>
+              <![CDATA[Apeirian2]]>
+            </line>
+            <line>
+              <![CDATA[Adipisci2]]>
+            </line>
+            <line>
+              <![CDATA[Definiebas2]]>
+            </line>
+            <line>
+              <![CDATA[Consequuntur2]]>
+            </line>
+            <line>
+              <![CDATA[Phaedrum2]]>
+            </line>
+            <line>
+              <![CDATA[edit delete]]>
+            </line>
+            <line>
+              <![CDATA[==============Row:4 Data================]]>
+            </line>
+            <line>
+              <![CDATA[Iuvaret3]]>
+            </line>
+            <line>
+              <![CDATA[Apeirian3]]>
+            </line>
+            <line>
+              <![CDATA[Adipisci3]]>
+            </line>
+            <line>
+              <![CDATA[Definiebas3]]>
+            </line>
+            <line>
+              <![CDATA[Consequuntur3]]>
+            </line>
+            <line>
+              <![CDATA[Phaedrum3]]>
+            </line>
+            <line>
+              <![CDATA[edit delete]]>
+            </line>
+            <line>
+              <![CDATA[==============Row:5 Data================]]>
+            </line>
+            <line>
+              <![CDATA[Iuvaret4]]>
+            </line>
+            <line>
+              <![CDATA[Apeirian4]]>
+            </line>
+            <line>
+              <![CDATA[Adipisci4]]>
+            </line>
+            <line>
+              <![CDATA[Definiebas4]]>
+            </line>
+            <line>
+              <![CDATA[Consequuntur4]]>
+            </line>
+            <line>
+              <![CDATA[Phaedrum4]]>
+            </line>
+            <line>
+              <![CDATA[edit delete]]>
+            </line>
+            <line>
+              <![CDATA[==============Row:6 Data================]]>
+            </line>
+            <line>
+              <![CDATA[Iuvaret5]]>
+            </line>
+            <line>
+              <![CDATA[Apeirian5]]>
+            </line>
+            <line>
+              <![CDATA[Adipisci5]]>
+            </line>
+            <line>
+              <![CDATA[Definiebas5]]>
+            </line>
+            <line>
+              <![CDATA[Consequuntur5]]>
+            </line>
+            <line>
+              <![CDATA[Phaedrum5]]>
+            </line>
+            <line>
+              <![CDATA[edit delete]]>
+            </line>
+            <line>
+              <![CDATA[==============Row:7 Data================]]>
+            </line>
+            <line>
+              <![CDATA[Iuvaret6]]>
+            </line>
+            <line>
+              <![CDATA[Apeirian6]]>
+            </line>
+            <line>
+              <![CDATA[Adipisci6]]>
+            </line>
+            <line>
+              <![CDATA[Definiebas6]]>
+            </line>
+            <line>
+              <![CDATA[Consequuntur6]]>
+            </line>
+            <line>
+              <![CDATA[Phaedrum6]]>
+            </line>
+            <line>
+              <![CDATA[edit delete]]>
+            </line>
+            <line>
+              <![CDATA[==============Row:8 Data================]]>
+            </line>
+            <line>
+              <![CDATA[Iuvaret7]]>
+            </line>
+            <line>
+              <![CDATA[Apeirian7]]>
+            </line>
+            <line>
+              <![CDATA[Adipisci7]]>
+            </line>
+            <line>
+              <![CDATA[Definiebas7]]>
+            </line>
+            <line>
+              <![CDATA[Consequuntur7]]>
+            </line>
+            <line>
+              <![CDATA[Phaedrum7]]>
+            </line>
+            <line>
+              <![CDATA[edit delete]]>
+            </line>
+            <line>
+              <![CDATA[==============Row:9 Data================]]>
+            </line>
+            <line>
+              <![CDATA[Iuvaret8]]>
+            </line>
+            <line>
+              <![CDATA[Apeirian8]]>
+            </line>
+            <line>
+              <![CDATA[Adipisci8]]>
+            </line>
+            <line>
+              <![CDATA[Definiebas8]]>
+            </line>
+            <line>
+              <![CDATA[Consequuntur8]]>
+            </line>
+            <line>
+              <![CDATA[Phaedrum8]]>
+            </line>
+            <line>
+              <![CDATA[edit delete]]>
+            </line>
+            <line>
+              <![CDATA[==============Row:10 Data================]]>
+            </line>
+            <line>
+              <![CDATA[Iuvaret9]]>
+            </line>
+            <line>
+              <![CDATA[Apeirian9]]>
+            </line>
+            <line>
+              <![CDATA[Adipisci9]]>
+            </line>
+            <line>
+              <![CDATA[Definiebas9]]>
+            </line>
+            <line>
+              <![CDATA[Consequuntur9]]>
+            </line>
+            <line>
+              <![CDATA[Phaedrum9]]>
+            </line>
+            <line>
+              <![CDATA[edit delete]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTableData -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:herokuapp.VerifyTableData@5cb9f472]" name="closeBrowser" duration-ms="103" started-at="2017-07-02T16:48:54Z" finished-at="2017-07-02T16:48:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- herokuapp.VerifyTableData -->
+    </test> <!-- Testcase 9: VerifyTableData -->
+    <test name="Testcase 10: VerifyTitle" duration-ms="7231" started-at="2017-07-02T11:18:54Z" finished-at="2017-07-02T11:19:02Z">
+      <class name="herokuapp.VerifyTitle">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:herokuapp.VerifyTitle@5702b3b1]" name="launchApp" duration-ms="7094" started-at="2017-07-02T16:48:54Z" finished-at="2017-07-02T16:49:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="maximizeApp()[pri:0, instance:herokuapp.VerifyTitle@5702b3b1]" name="maximizeApp" duration-ms="20" started-at="2017-07-02T16:49:01Z" finished-at="2017-07-02T16:49:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximizeApp -->
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:herokuapp.VerifyTitle@5702b3b1]" name="verifyTitle" duration-ms="16" started-at="2017-07-02T16:49:01Z" finished-at="2017-07-02T16:49:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:herokuapp.VerifyTitle@5702b3b1]" name="closeBrowser" duration-ms="94" started-at="2017-07-02T16:49:01Z" finished-at="2017-07-02T16:49:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- herokuapp.VerifyTitle -->
+    </test> <!-- Testcase 10: VerifyTitle -->
+  </suite> <!-- Suite -->
 </testng-results>

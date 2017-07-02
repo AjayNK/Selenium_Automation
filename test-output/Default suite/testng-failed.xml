@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="herokuapp.VerifyHeader">
+      <class name="herokuapp.VerifyEditFunctionality">
         <methods>
-          <include name="verifyHeaderParagraph"/>
+          <include name="verifyTableData"/>
         </methods>
-      </class> <!-- herokuapp.VerifyHeader -->
+      </class> <!-- herokuapp.VerifyEditFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
