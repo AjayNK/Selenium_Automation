@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8346" started-at="2017-07-01T12:28:49Z" finished-at="2017-07-01T12:28:57Z">
+  <suite name="Default suite" duration-ms="8691" started-at="2017-07-01T13:18:11Z" finished-at="2017-07-01T13:18:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8346" started-at="2017-07-01T12:28:49Z" finished-at="2017-07-01T12:28:57Z">
+    <test name="Default test" duration-ms="8691" started-at="2017-07-01T13:18:11Z" finished-at="2017-07-01T13:18:20Z">
       <class name="herokuapp.VerifyHeader">
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="launchApp" duration-ms="8136" started-at="2017-07-01T17:58:49Z" finished-at="2017-07-01T17:58:57Z">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="launchApp" duration-ms="8485" started-at="2017-07-01T18:48:11Z" finished-at="2017-07-01T18:48:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="maximizeApp()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="maximizeApp" duration-ms="20" started-at="2017-07-01T17:58:57Z" finished-at="2017-07-01T17:58:57Z">
+        <test-method status="PASS" signature="maximizeApp()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="maximizeApp" duration-ms="20" started-at="2017-07-01T18:48:20Z" finished-at="2017-07-01T18:48:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- maximizeApp -->
-        <test-method status="PASS" signature="verifyHeaderTxt()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="verifyHeaderTxt" duration-ms="60" started-at="2017-07-01T17:58:57Z" finished-at="2017-07-01T17:58:57Z">
+        <test-method status="PASS" signature="verifyHeaderTxt()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="verifyHeaderTxt" duration-ms="57" started-at="2017-07-01T18:48:20Z" finished-at="2017-07-01T18:48:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeaderTxt -->
-        <test-method status="PASS" signature="verifyHeaderParagraph()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="verifyHeaderParagraph" duration-ms="40" started-at="2017-07-01T17:58:57Z" finished-at="2017-07-01T17:58:57Z">
+        <test-method status="PASS" signature="verifyHeaderParagraph()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="verifyHeaderParagraph" duration-ms="44" started-at="2017-07-01T18:48:20Z" finished-at="2017-07-01T18:48:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeaderParagraph -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="closeBrowser" duration-ms="50" started-at="2017-07-01T17:58:57Z" finished-at="2017-07-01T17:58:57Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:herokuapp.VerifyHeader@4678c730]" name="closeBrowser" duration-ms="54" started-at="2017-07-01T18:48:20Z" finished-at="2017-07-01T18:48:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

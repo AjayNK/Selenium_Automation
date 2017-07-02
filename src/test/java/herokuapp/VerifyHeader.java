@@ -1,24 +1,44 @@
 package herokuapp;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import junit.framework.Assert;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class VerifyHeader {
 		
 	WebDriver driver;
+	String strAppURL,nodeURL;
+	
 
+	@BeforeTest
+	public void initSetup() throws MalformedURLException
+	{
+	nodeURL = "http://192.168.0.3:5617/wd/hub";
+	strAppURL = "https://the-internet.herokuapp.com/challenging_dom";
+	DesiredCapabilities capability = DesiredCapabilities .firefox();
+	capability.setBrowserName("firefox");
+	capability.setPlatform(Platform.XP);
+	driver = new RemoteWebDriver(new URL(nodeURL), capability);
+	}
+	
 	@Test(priority=1)
 	public void launchApp()
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("https://the-internet.herokuapp.com/challenging_dom");
+		driver.get(strAppURL);
 		driver.manage().window().maximize();
 	}
 	
@@ -47,7 +67,7 @@ public class VerifyHeader {
 		Assert.assertEquals(strExpected, strHeader);
 	}
 	
-	@Test(priority=5)
+	@AfterTest
 	public void closeBrowser()
 	{
 		driver.close();
