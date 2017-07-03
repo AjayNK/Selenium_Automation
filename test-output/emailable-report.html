@@ -1,269 +1,598 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>TestNG:  Unit Test</title>
-<style type="text/css">
-table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
-table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
-border:1px solid #000099;padding:.25em .5em .25em .5em
-}
-table.result th {vertical-align:bottom}
-tr.param th {padding-left:1em;padding-right:1em}
-tr.param td {padding-left:.5em;padding-right:2em}
-td.numi,th.numi,td.numi_attn {
-text-align:right
-}
-tr.total td {font-weight:bold}
-table caption {
-text-align:center;font-weight:bold;
-}
-table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
-table.passed td,table tr.passedeven td {background-color: #33FF33;}
-table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
-table.passed td,table tr.skippedodd td {background-color: #dddddd;}
-table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
-table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
-tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
-p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
-div.shootout {padding:2em;border:3px #4854A8 solid}
-</style>
-</head>
-<body>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Testcase 1: ColumnHeaders</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">9.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Testcase 2: ValidateFooterLink</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">15.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr><td style="text-align:left;padding-right:2em">Testcase 3: VerifyAnswerCode</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">10.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Testcase 4: VerifyButtons</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">9.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr><td style="text-align:left;padding-right:2em">Testcase 5: VerifyDeleteFunctionality</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">12.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Testcase 6: VerifyEditFunctionality</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">11.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr><td style="text-align:left;padding-right:2em">Testcase 7: VerifyFooterTxt</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">12.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Testcase 8: VerifyHeader</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">7.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr><td style="text-align:left;padding-right:2em">Testcase 9: VerifyTableData</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">12.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Testcase 10: VerifyTitle</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">7.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="total"><td>Total</td>
-<td class="numi">40</td><td class="numi">40</td><td class="numi">0</td><td class="numi">0</td><td class="numi">107.9 seconds</td><td colspan="2">&nbsp;</td></tr>
-</table>
-<table cellspacing="0" cellpadding="0" class="passed" id="summary">
-<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Testcase 1: ColumnHeaders &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">herokuapp.ColumnHeaders</td><td><a href="#m1"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498994243367</td><td class="numi">109</td></tr><tr class="passedodd"><td><a href="#m2"><b>launchApp</b>  </a></td><td class="numi">1</td><td>1498994234134</td><td class="numi">8772</td></tr><tr class="passedodd"><td><a href="#m3"><b>maximizeApp</b>  </a></td><td class="numi">1</td><td>1498994242907</td><td class="numi">24</td></tr><tr class="passedodd"><td><a href="#m4"><b>verifyColumnHeader</b>  </a></td><td class="numi">1</td><td>1498994242932</td><td class="numi">434</td></tr>
-<tr><th colspan="4">Testcase 2: ValidateFooterLink &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">herokuapp.ValidateFooterLink</td><td><a href="#m5"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498994257513</td><td class="numi">1086</td></tr><tr class="passedodd"><td><a href="#m6"><b>launchApp</b>  </a></td><td class="numi">1</td><td>1498994243520</td><td class="numi">8569</td></tr><tr class="passedodd"><td><a href="#m7"><b>maximizeApp</b>  </a></td><td class="numi">1</td><td>1498994252090</td><td class="numi">9</td></tr><tr class="passedodd"><td><a href="#m8"><b>verifyFooterLnk</b>  </a></td><td class="numi">1</td><td>1498994252100</td><td class="numi">5411</td></tr>
-<tr><th colspan="4">Testcase 3: VerifyAnswerCode &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">herokuapp.VerifyAnswerCode</td><td><a href="#m9"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498994268657</td><td class="numi">146</td></tr><tr class="passedodd"><td><a href="#m10"><b>launchApp</b>  </a></td><td class="numi">1</td><td>1498994258608</td><td class="numi">6991</td></tr><tr class="passedodd"><td><a href="#m11"><b>maximizeApp</b>  </a></td><td class="numi">1</td><td>1498994265601</td><td class="numi">12</td></tr><tr class="passedodd"><td><a href="#m12"><b>verifyCode</b>  </a></td><td class="numi">1</td><td>1498994265615</td><td class="numi">3041</td></tr>
-<tr><th colspan="4">Testcase 4: VerifyButtons &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">herokuapp.VerifyButtons</td><td><a href="#m13"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498994278185</td><td class="numi">87</td></tr><tr class="passedodd"><td><a href="#m14"><b>launchApp</b>  </a></td><td class="numi">1</td><td>1498994268821</td><td class="numi">7065</td></tr><tr class="passedodd"><td><a href="#m15"><b>maximizeApp</b>  </a></td><td class="numi">1</td><td>1498994275889</td><td class="numi">2038</td></tr><tr class="passedodd"><td><a href="#m16"><b>validateButtons</b>  </a></td><td class="numi">1</td><td>1498994277928</td><td class="numi">256</td></tr>
-<tr><th colspan="4">Testcase 5: VerifyDeleteFunctionality &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">herokuapp.VerifyDeleteFunctionality</td><td><a href="#m17"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498994290833</td><td class="numi">104</td></tr><tr class="passedodd"><td><a href="#m18"><b>launchApp</b>  </a></td><td class="numi">1</td><td>1498994278291</td><td class="numi">8639</td></tr><tr class="passedodd"><td><a href="#m19"><b>maximizeApp</b>  </a></td><td class="numi">1</td><td>1498994286930</td><td class="numi">12</td></tr><tr class="passedodd"><td><a href="#m20"><b>verifyTableData</b>  </a></td><td class="numi">1</td><td>1498994286944</td><td class="numi">3889</td></tr>
-<tr><th colspan="4">Testcase 6: VerifyEditFunctionality &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">herokuapp.VerifyEditFunctionality</td><td><a href="#m21"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498994301974</td><td class="numi">86</td></tr><tr class="passedodd"><td><a href="#m22"><b>launchApp</b>  </a></td><td class="numi">1</td><td>1498994290957</td><td class="numi">7112</td></tr><tr class="passedodd"><td><a href="#m23"><b>maximizeApp</b>  </a></td><td class="numi">1</td><td>1498994298070</td><td class="numi">10</td></tr><tr class="passedodd"><td><a href="#m24"><b>verifyTableData</b>  </a></td><td class="numi">1</td><td>1498994298082</td><td class="numi">3890</td></tr>
-<tr><th colspan="4">Testcase 7: VerifyFooterTxt &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">herokuapp.VerifyFooterTxt</td><td><a href="#m25"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498994314868</td><td class="numi">157</td></tr><tr class="passedodd"><td><a href="#m26"><b>launchApp</b>  </a></td><td class="numi">1</td><td>1498994302086</td><td class="numi">12657</td></tr><tr class="passedodd"><td><a href="#m27"><b>maximizeApp</b>  </a></td><td class="numi">1</td><td>1498994314744</td><td class="numi">15</td></tr><tr class="passedodd"><td><a href="#m28"><b>verifyColumnHeader</b>  </a></td><td class="numi">1</td><td>1498994314760</td><td class="numi">107</td></tr>
-<tr><th colspan="4">Testcase 8: VerifyHeader &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">herokuapp.VerifyHeader</td><td><a href="#m29"><b>launchApp</b>  </a></td><td class="numi">1</td><td>1498994315042</td><td class="numi">7113</td></tr><tr class="passedodd"><td><a href="#m30"><b>maximizeApp</b>  </a></td><td class="numi">1</td><td>1498994322155</td><td class="numi">12</td></tr><tr class="passedodd"><td><a href="#m31"><b>verifyHeaderParagraph</b>  </a></td><td class="numi">1</td><td>1498994322261</td><td class="numi">83</td></tr><tr class="passedodd"><td><a href="#m32"><b>verifyHeaderTxt</b>  </a></td><td class="numi">1</td><td>1498994322168</td><td class="numi">92</td></tr>
-<tr><th colspan="4">Testcase 9: VerifyTableData &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">herokuapp.VerifyTableData</td><td><a href="#m33"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498994334674</td><td class="numi">103</td></tr><tr class="passedodd"><td><a href="#m34"><b>launchApp</b>  </a></td><td class="numi">1</td><td>1498994322443</td><td class="numi">7590</td></tr><tr class="passedodd"><td><a href="#m35"><b>maximizeApp</b>  </a></td><td class="numi">1</td><td>1498994330034</td><td class="numi">17</td></tr><tr class="passedodd"><td><a href="#m36"><b>verifyTableData</b>  </a></td><td class="numi">1</td><td>1498994330053</td><td class="numi">4619</td></tr>
-<tr><th colspan="4">Testcase 10: VerifyTitle &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">herokuapp.VerifyTitle</td><td><a href="#m37"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498994341918</td><td class="numi">94</td></tr><tr class="passedodd"><td><a href="#m38"><b>launchApp</b>  </a></td><td class="numi">1</td><td>1498994334784</td><td class="numi">7094</td></tr><tr class="passedodd"><td><a href="#m39"><b>maximizeApp</b>  </a></td><td class="numi">1</td><td>1498994341879</td><td class="numi">20</td></tr><tr class="passedodd"><td><a href="#m40"><b>verifyTitle</b>  </a></td><td class="numi">1</td><td>1498994341900</td><td class="numi">16</td></tr>
-</table>
-<h1>Testcase 1: ColumnHeaders</h1>
-<h2 id="m1">herokuapp.ColumnHeaders:verifyColumnHeader</h2>
-<div style="padding-left:3em">
-Lorem<br/>
-Ipsum<br/>
-Dolor<br/>
-Sit<br/>
-Amet<br/>
-Diceret<br/>
-Action<br/>
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">herokuapp.ColumnHeaders:closeBrowser</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">herokuapp.ColumnHeaders:launchApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">herokuapp.ColumnHeaders:maximizeApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Testcase 2: ValidateFooterLink</h1>
-<h2 id="m5">herokuapp.ValidateFooterLink:launchApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">herokuapp.ValidateFooterLink:closeBrowser</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">herokuapp.ValidateFooterLink:verifyFooterLnk</h2>
-<div style="padding-left:3em">
-Footer window title is: Elemental Selenium: Receive a Free, Weekly Tip on Using Selenium like a Pro<br/>
-Home Page window title is: The Internet<br/>
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">herokuapp.ValidateFooterLink:maximizeApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Testcase 3: VerifyAnswerCode</h1>
-<h2 id="m9">herokuapp.VerifyAnswerCode:verifyCode</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">herokuapp.VerifyAnswerCode:closeBrowser</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m11">herokuapp.VerifyAnswerCode:launchApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m12">herokuapp.VerifyAnswerCode:maximizeApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Testcase 4: VerifyButtons</h1>
-<h2 id="m13">herokuapp.VerifyButtons:closeBrowser</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m14">herokuapp.VerifyButtons:validateButtons</h2>
-<div style="padding-left:3em">
-First Button Name is: bar & background color is: rgba(43, 166, 203, 1)<br/>
-Second Button Name is: baz & background color is: rgba(198, 15, 19, 1)<br/>
-Third Button Name is: qux & background color is: rgba(93, 164, 35, 1)<br/>
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m15">herokuapp.VerifyButtons:launchApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m16">herokuapp.VerifyButtons:maximizeApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Testcase 5: VerifyDeleteFunctionality</h1>
-<h2 id="m17">herokuapp.VerifyDeleteFunctionality:launchApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m18">herokuapp.VerifyDeleteFunctionality:maximizeApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m19">herokuapp.VerifyDeleteFunctionality:closeBrowser</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m20">herokuapp.VerifyDeleteFunctionality:verifyTableData</h2>
-<div style="padding-left:3em">
-Clicked on Delete Button of Iuvaret4 Record<br/>
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Testcase 6: VerifyEditFunctionality</h1>
-<h2 id="m21">herokuapp.VerifyEditFunctionality:verifyTableData</h2>
-<div style="padding-left:3em">
-Clicked on Edit Button of Iuvaret4 Record<br/>
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m22">herokuapp.VerifyEditFunctionality:closeBrowser</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m23">herokuapp.VerifyEditFunctionality:launchApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m24">herokuapp.VerifyEditFunctionality:maximizeApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Testcase 7: VerifyFooterTxt</h1>
-<h2 id="m25">herokuapp.VerifyFooterTxt:closeBrowser</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m26">herokuapp.VerifyFooterTxt:verifyColumnHeader</h2>
-<div style="padding-left:3em">
-Powered by Elemental Selenium<br/>
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m27">herokuapp.VerifyFooterTxt:launchApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m28">herokuapp.VerifyFooterTxt:maximizeApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Testcase 8: VerifyHeader</h1>
-<h2 id="m29">herokuapp.VerifyHeader:verifyHeaderParagraph</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m30">herokuapp.VerifyHeader:launchApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m31">herokuapp.VerifyHeader:maximizeApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m32">herokuapp.VerifyHeader:verifyHeaderTxt</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Testcase 9: VerifyTableData</h1>
-<h2 id="m33">herokuapp.VerifyTableData:closeBrowser</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m34">herokuapp.VerifyTableData:verifyTableData</h2>
-<div style="padding-left:3em">
-==============Row:1 Data================<br/>
-Iuvaret0<br/>
-Apeirian0<br/>
-Adipisci0<br/>
-Definiebas0<br/>
-Consequuntur0<br/>
-Phaedrum0<br/>
-edit delete<br/>
-==============Row:2 Data================<br/>
-Iuvaret1<br/>
-Apeirian1<br/>
-Adipisci1<br/>
-Definiebas1<br/>
-Consequuntur1<br/>
-Phaedrum1<br/>
-edit delete<br/>
-==============Row:3 Data================<br/>
-Iuvaret2<br/>
-Apeirian2<br/>
-Adipisci2<br/>
-Definiebas2<br/>
-Consequuntur2<br/>
-Phaedrum2<br/>
-edit delete<br/>
-==============Row:4 Data================<br/>
-Iuvaret3<br/>
-Apeirian3<br/>
-Adipisci3<br/>
-Definiebas3<br/>
-Consequuntur3<br/>
-Phaedrum3<br/>
-edit delete<br/>
-==============Row:5 Data================<br/>
-Iuvaret4<br/>
-Apeirian4<br/>
-Adipisci4<br/>
-Definiebas4<br/>
-Consequuntur4<br/>
-Phaedrum4<br/>
-edit delete<br/>
-==============Row:6 Data================<br/>
-Iuvaret5<br/>
-Apeirian5<br/>
-Adipisci5<br/>
-Definiebas5<br/>
-Consequuntur5<br/>
-Phaedrum5<br/>
-edit delete<br/>
-==============Row:7 Data================<br/>
-Iuvaret6<br/>
-Apeirian6<br/>
-Adipisci6<br/>
-Definiebas6<br/>
-Consequuntur6<br/>
-Phaedrum6<br/>
-edit delete<br/>
-==============Row:8 Data================<br/>
-Iuvaret7<br/>
-Apeirian7<br/>
-Adipisci7<br/>
-Definiebas7<br/>
-Consequuntur7<br/>
-Phaedrum7<br/>
-edit delete<br/>
-==============Row:9 Data================<br/>
-Iuvaret8<br/>
-Apeirian8<br/>
-Adipisci8<br/>
-Definiebas8<br/>
-Consequuntur8<br/>
-Phaedrum8<br/>
-edit delete<br/>
-==============Row:10 Data================<br/>
-Iuvaret9<br/>
-Apeirian9<br/>
-Adipisci9<br/>
-Definiebas9<br/>
-Consequuntur9<br/>
-Phaedrum9<br/>
-edit delete<br/>
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m35">herokuapp.VerifyTableData:launchApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m36">herokuapp.VerifyTableData:maximizeApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Testcase 10: VerifyTitle</h1>
-<h2 id="m37">herokuapp.VerifyTitle:closeBrowser</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m38">herokuapp.VerifyTitle:launchApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m39">herokuapp.VerifyTitle:maximizeApp</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m40">herokuapp.VerifyTitle:verifyTitle</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-</body></html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Testcase 1: ColumnHeaders</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">10,457</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">Testcase 2: ValidateFooterLink</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">3</td><td class="num">12,272</td><td></td><td></td></tr><tr><td><a href="#t2">Testcase 3: VerifyAnswerCode</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">7,030</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t3">Testcase 4: VerifyButtons</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">3,333</td><td></td><td></td></tr><tr><td><a href="#t4">Testcase 5: VerifyDeleteFunctionality</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">9,063</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t5">Testcase 6: VerifyEditFunctionality</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">9,289</td><td></td><td></td></tr><tr><td><a href="#t6">Testcase 7: VerifyFooterTxt</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">7,191</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t7">Testcase 8: VerifyHeader</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">9,605</td><td></td><td></td></tr><tr><td><a href="#t8">Testcase 9: VerifyTableData</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">9,169</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t9">Testcase 10: VerifyTitle</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">10,121</td><td></td><td></td></tr><tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">39</th><th class="num">87,530</th><th colspan="2"></th></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testcase 1: ColumnHeaders &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">herokuapp.ColumnHeaders</td><td><a href="#m0">closeBrowser</a></td><td rowspan="1">1499050577320</td><td rowspan="1">1770</td></tr><tr class="failedeven"><td><a href="#m1">launchApp</a></td><td rowspan="1">1499050568663</td><td rowspan="1">8367</td></tr><tr class="failedeven"><td><a href="#m2">maximizeApp</a></td><td rowspan="1">1499050577060</td><td rowspan="1">240</td></tr><tr class="failedeven"><td><a href="#m3">verifyColumnHeader</a></td><td rowspan="1">1499050577310</td><td rowspan="1">10</td></tr></tbody><tbody id="t1"><tr><th colspan="4">Testcase 2: ValidateFooterLink &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">herokuapp.ValidateFooterLink</td><td><a href="#m4">launchApp</a></td><td rowspan="1">1499050579150</td><td rowspan="1">10933</td></tr><tr class="failedeven"><td><a href="#m5">maximizeApp</a></td><td rowspan="1">1499050590109</td><td rowspan="1">230</td></tr><tr class="failedeven"><td><a href="#m6">verifyFooterLnk</a></td><td rowspan="1">1499050590339</td><td rowspan="1">20</td></tr><tr><th colspan="4">Testcase 2: ValidateFooterLink &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">herokuapp.ValidateFooterLink</td><td><a href="#m7">closeBrowser</a></td><td rowspan="1">1499050590359</td><td rowspan="1">1063</td></tr></tbody><tbody id="t2"><tr><th colspan="4">Testcase 3: VerifyAnswerCode &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">herokuapp.VerifyAnswerCode</td><td><a href="#m8">closeBrowser</a></td><td rowspan="1">1499050596731</td><td rowspan="1">1741</td></tr><tr class="failedeven"><td><a href="#m9">launchApp</a></td><td rowspan="1">1499050591442</td><td rowspan="1">4999</td></tr><tr class="failedeven"><td><a href="#m10">maximizeApp</a></td><td rowspan="1">1499050596441</td><td rowspan="1">260</td></tr><tr class="failedeven"><td><a href="#m11">verifyCode</a></td><td rowspan="1">1499050596711</td><td rowspan="1">10</td></tr></tbody><tbody id="t3"><tr><th colspan="4">Testcase 4: VerifyButtons &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">herokuapp.VerifyButtons</td><td><a href="#m12">closeBrowser</a></td><td rowspan="1">1499050601845</td><td rowspan="1">10</td></tr><tr class="failedeven"><td><a href="#m13">launchApp</a></td><td rowspan="1">1499050598522</td><td rowspan="1">3323</td></tr><tr class="failedeven"><td><a href="#m14">maximizeApp</a></td><td rowspan="1">1499050601845</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m15">validateButtons</a></td><td rowspan="1">1499050601845</td><td rowspan="1">0</td></tr></tbody><tbody id="t4"><tr><th colspan="4">Testcase 5: VerifyDeleteFunctionality &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">herokuapp.VerifyDeleteFunctionality</td><td><a href="#m16">closeBrowser</a></td><td rowspan="1">1499050609232</td><td rowspan="1">1696</td></tr><tr class="failedeven"><td><a href="#m17">launchApp</a></td><td rowspan="1">1499050601865</td><td rowspan="1">7055</td></tr><tr class="failedeven"><td><a href="#m18">maximizeApp</a></td><td rowspan="1">1499050608920</td><td rowspan="1">262</td></tr><tr class="failedeven"><td><a href="#m19">verifyTableData</a></td><td rowspan="1">1499050609222</td><td rowspan="1">10</td></tr></tbody><tbody id="t5"><tr><th colspan="4">Testcase 6: VerifyEditFunctionality &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">herokuapp.VerifyEditFunctionality</td><td><a href="#m20">closeBrowser</a></td><td rowspan="1">1499050618514</td><td rowspan="1">1743</td></tr><tr class="failedeven"><td><a href="#m21">launchApp</a></td><td rowspan="1">1499050610968</td><td rowspan="1">7263</td></tr><tr class="failedeven"><td><a href="#m22">maximizeApp</a></td><td rowspan="1">1499050618231</td><td rowspan="1">260</td></tr><tr class="failedeven"><td><a href="#m23">verifyTableData</a></td><td rowspan="1">1499050618501</td><td rowspan="1">0</td></tr></tbody><tbody id="t6"><tr><th colspan="4">Testcase 7: VerifyFooterTxt &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">herokuapp.VerifyFooterTxt</td><td><a href="#m24">closeBrowser</a></td><td rowspan="1">1499050625717</td><td rowspan="1">1771</td></tr><tr class="failedeven"><td><a href="#m25">launchApp</a></td><td rowspan="1">1499050620297</td><td rowspan="1">5170</td></tr><tr class="failedeven"><td><a href="#m26">maximizeApp</a></td><td rowspan="1">1499050625472</td><td rowspan="1">225</td></tr><tr class="failedeven"><td><a href="#m27">verifyColumnHeader</a></td><td rowspan="1">1499050625707</td><td rowspan="1">10</td></tr></tbody><tbody id="t7"><tr><th colspan="4">Testcase 8: VerifyHeader &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">herokuapp.VerifyHeader</td><td><a href="#m28">closeBrowser</a></td><td rowspan="1">1499050635332</td><td rowspan="1">1771</td></tr><tr><th colspan="4">Testcase 8: VerifyHeader &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">herokuapp.VerifyHeader</td><td><a href="#m29">launchApp</a></td><td rowspan="1">1499050627498</td><td rowspan="1">7574</td></tr><tr class="failedeven"><td><a href="#m30">maximizeApp</a></td><td rowspan="1">1499050635072</td><td rowspan="1">240</td></tr><tr class="failedeven"><td><a href="#m31">verifyHeaderParagraph</a></td><td rowspan="1">1499050635322</td><td rowspan="1">10</td></tr><tr class="failedeven"><td><a href="#m32">verifyHeaderTxt</a></td><td rowspan="1">1499050635312</td><td rowspan="1">10</td></tr></tbody><tbody id="t8"><tr><th colspan="4">Testcase 9: VerifyTableData &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">herokuapp.VerifyTableData</td><td><a href="#m33">closeBrowser</a></td><td rowspan="1">1499050644544</td><td rowspan="1">1758</td></tr><tr class="failedeven"><td><a href="#m34">launchApp</a></td><td rowspan="1">1499050637133</td><td rowspan="1">7131</td></tr><tr class="failedeven"><td><a href="#m35">maximizeApp</a></td><td rowspan="1">1499050644284</td><td rowspan="1">250</td></tr><tr class="failedeven"><td><a href="#m36">verifyTableData</a></td><td rowspan="1">1499050644534</td><td rowspan="1">10</td></tr></tbody><tbody id="t9"><tr><th colspan="4">Testcase 10: VerifyTitle &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">herokuapp.VerifyTitle</td><td><a href="#m37">closeBrowser</a></td><td rowspan="1">1499050654714</td><td rowspan="1">1739</td></tr><tr class="failedeven"><td><a href="#m38">launchApp</a></td><td rowspan="1">1499050646332</td><td rowspan="1">8101</td></tr><tr class="failedeven"><td><a href="#m39">maximizeApp</a></td><td rowspan="1">1499050654433</td><td rowspan="1">261</td></tr><tr class="failedeven"><td><a href="#m40">verifyTitle</a></td><td rowspan="1">1499050654694</td><td rowspan="1">10</td></tr></tbody></table><h2>Testcase 1: ColumnHeaders</h2><h3 id="m0">herokuapp.ColumnHeaders#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.77 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6356_28688}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 813ac3c3099f3456b3b2929c1d87fba3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at herokuapp.ColumnHeaders.closeBrowser(ColumnHeaders.java:45)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">herokuapp.ColumnHeaders#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.01 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6356_28688}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 813ac3c3099f3456b3b2929c1d87fba3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.ColumnHeaders.launchApp(ColumnHeaders.java:22)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">herokuapp.ColumnHeaders#maximizeApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 230 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6356_28688}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 813ac3c3099f3456b3b2929c1d87fba3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.ColumnHeaders.maximizeApp(ColumnHeaders.java:28)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">herokuapp.ColumnHeaders#verifyColumnHeader</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6356_28688}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 813ac3c3099f3456b3b2929c1d87fba3
+*** Element info: {Using=xpath, value=//*[@id=&apos;content&apos;]/div/div/div/div[2]/table/thead/tr/th[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at herokuapp.ColumnHeaders.verifyColumnHeader(ColumnHeaders.java:37)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Testcase 2: ValidateFooterLink</h2><h3 id="m4">herokuapp.ValidateFooterLink#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.05 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6172_31339}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 730bf98e07453a0e545f0d4e8cdaee7f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.ValidateFooterLink.launchApp(ValidateFooterLink.java:22)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">herokuapp.ValidateFooterLink#maximizeApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 228 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6172_31339}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 730bf98e07453a0e545f0d4e8cdaee7f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.ValidateFooterLink.maximizeApp(ValidateFooterLink.java:28)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">herokuapp.ValidateFooterLink#verifyFooterLnk</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6172_31339}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 730bf98e07453a0e545f0d4e8cdaee7f
+*** Element info: {Using=link text, value=Elemental Selenium}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at herokuapp.ValidateFooterLink.verifyFooterLnk(ValidateFooterLink.java:35)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">herokuapp.ValidateFooterLink#closeBrowser</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Testcase 3: VerifyAnswerCode</h2><h3 id="m8">herokuapp.VerifyAnswerCode#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.74 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir1676_16435}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cb6245e3043ef772765cb50b6aaff5bf
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at herokuapp.VerifyAnswerCode.closeBrowser(VerifyAnswerCode.java:47)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">herokuapp.VerifyAnswerCode#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.04 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir1676_16435}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cb6245e3043ef772765cb50b6aaff5bf
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyAnswerCode.launchApp(VerifyAnswerCode.java:20)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">herokuapp.VerifyAnswerCode#maximizeApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 250 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir1676_16435}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cb6245e3043ef772765cb50b6aaff5bf
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyAnswerCode.maximizeApp(VerifyAnswerCode.java:26)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m11">herokuapp.VerifyAnswerCode#verifyCode</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir1676_16435}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cb6245e3043ef772765cb50b6aaff5bf
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at herokuapp.VerifyAnswerCode.verifyCode(VerifyAnswerCode.java:35)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Testcase 4: VerifyButtons</h2><h3 id="m12">herokuapp.VerifyButtons#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at herokuapp.VerifyButtons.closeBrowser(VerifyButtons.java:59)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m13">herokuapp.VerifyButtons#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.66 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:170)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:159)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+	at herokuapp.VerifyButtons.launchApp(VerifyButtons.java:22)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m14">herokuapp.VerifyButtons#maximizeApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at herokuapp.VerifyButtons.maximizeApp(VerifyButtons.java:30)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m15">herokuapp.VerifyButtons#validateButtons</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at herokuapp.VerifyButtons.validateButtons(VerifyButtons.java:38)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Testcase 5: VerifyDeleteFunctionality</h2><h3 id="m16">herokuapp.VerifyDeleteFunctionality#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.70 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6796_18443}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 1a10f7a4183eca771263c344d3dfa08d
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at herokuapp.VerifyDeleteFunctionality.closeBrowser(VerifyDeleteFunctionality.java:61)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m17">herokuapp.VerifyDeleteFunctionality#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.01 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6796_18443}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 1a10f7a4183eca771263c344d3dfa08d
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyDeleteFunctionality.launchApp(VerifyDeleteFunctionality.java:23)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m18">herokuapp.VerifyDeleteFunctionality#maximizeApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 252 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6796_18443}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 1a10f7a4183eca771263c344d3dfa08d
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyDeleteFunctionality.maximizeApp(VerifyDeleteFunctionality.java:29)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m19">herokuapp.VerifyDeleteFunctionality#verifyTableData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6796_18443}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 1a10f7a4183eca771263c344d3dfa08d
+*** Element info: {Using=tag name, value=table}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:388)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByTagName(RemoteWebDriver.java:453)
+	at org.openqa.selenium.By$ByTagName.findElements(By.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:351)
+	at herokuapp.VerifyDeleteFunctionality.verifyTableData(VerifyDeleteFunctionality.java:35)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Testcase 6: VerifyEditFunctionality</h2><h3 id="m20">herokuapp.VerifyEditFunctionality#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.74 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir4208_29218}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 5789c205c23eefd39e1c80deeb900da7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at herokuapp.VerifyEditFunctionality.closeBrowser(VerifyEditFunctionality.java:61)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m21">herokuapp.VerifyEditFunctionality#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.00 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir4208_29218}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 5789c205c23eefd39e1c80deeb900da7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyEditFunctionality.launchApp(VerifyEditFunctionality.java:23)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m22">herokuapp.VerifyEditFunctionality#maximizeApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 260 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir4208_29218}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 5789c205c23eefd39e1c80deeb900da7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyEditFunctionality.maximizeApp(VerifyEditFunctionality.java:29)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m23">herokuapp.VerifyEditFunctionality#verifyTableData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir4208_29218}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 5789c205c23eefd39e1c80deeb900da7
+*** Element info: {Using=tag name, value=table}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:388)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByTagName(RemoteWebDriver.java:453)
+	at org.openqa.selenium.By$ByTagName.findElements(By.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:351)
+	at herokuapp.VerifyEditFunctionality.verifyTableData(VerifyEditFunctionality.java:35)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Testcase 7: VerifyFooterTxt</h2><h3 id="m24">herokuapp.VerifyFooterTxt#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.77 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir1608_23775}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3ceb4939f60303a2dafcbf56baba7b41
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at herokuapp.VerifyFooterTxt.closeBrowser(VerifyFooterTxt.java:40)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m25">herokuapp.VerifyFooterTxt#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.03 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir1608_23775}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3ceb4939f60303a2dafcbf56baba7b41
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyFooterTxt.launchApp(VerifyFooterTxt.java:21)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m26">herokuapp.VerifyFooterTxt#maximizeApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 222 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir1608_23775}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3ceb4939f60303a2dafcbf56baba7b41
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyFooterTxt.maximizeApp(VerifyFooterTxt.java:27)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m27">herokuapp.VerifyFooterTxt#verifyColumnHeader</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir1608_23775}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3ceb4939f60303a2dafcbf56baba7b41
+*** Element info: {Using=xpath, value=//*[@id=&apos;page-footer&apos;]/div/div}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at herokuapp.VerifyFooterTxt.verifyColumnHeader(VerifyFooterTxt.java:33)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Testcase 8: VerifyHeader</h2><h3 id="m28">herokuapp.VerifyHeader#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.77 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6388_26201}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 43c48c627a62c7aef060e4db9d875805
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at herokuapp.VerifyHeader.closeBrowser(VerifyHeader.java:73)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m29">herokuapp.VerifyHeader#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.04 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6388_26201}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 43c48c627a62c7aef060e4db9d875805
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyHeader.launchApp(VerifyHeader.java:42)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m30">herokuapp.VerifyHeader#maximizeApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 230 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6388_26201}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 43c48c627a62c7aef060e4db9d875805
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyHeader.maximizeApp(VerifyHeader.java:48)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m31">herokuapp.VerifyHeader#verifyHeaderParagraph</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6388_26201}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 43c48c627a62c7aef060e4db9d875805
+*** Element info: {Using=xpath, value=//*[starts-with(text(),&apos;The hardest part&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at herokuapp.VerifyHeader.verifyHeaderParagraph(VerifyHeader.java:64)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m32">herokuapp.VerifyHeader#verifyHeaderTxt</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6388_26201}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 43c48c627a62c7aef060e4db9d875805
+*** Element info: {Using=xpath, value=//*[text()=&apos;Challenging DOM&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at herokuapp.VerifyHeader.verifyHeaderTxt(VerifyHeader.java:55)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Testcase 9: VerifyTableData</h2><h3 id="m33">herokuapp.VerifyTableData#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.76 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir4812_23567}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 5325ca744c7ab2938fab6eec0aaf1650
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at herokuapp.VerifyTableData.closeBrowser(VerifyTableData.java:54)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m34">herokuapp.VerifyTableData#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.01 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir4812_23567}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 5325ca744c7ab2938fab6eec0aaf1650
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyTableData.launchApp(VerifyTableData.java:22)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m35">herokuapp.VerifyTableData#maximizeApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 250 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir4812_23567}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 5325ca744c7ab2938fab6eec0aaf1650
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyTableData.maximizeApp(VerifyTableData.java:28)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m36">herokuapp.VerifyTableData#verifyTableData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir4812_23567}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 5325ca744c7ab2938fab6eec0aaf1650
+*** Element info: {Using=tag name, value=table}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:388)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByTagName(RemoteWebDriver.java:453)
+	at org.openqa.selenium.By$ByTagName.findElements(By.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:351)
+	at herokuapp.VerifyTableData.verifyTableData(VerifyTableData.java:34)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Testcase 10: VerifyTitle</h2><h3 id="m37">herokuapp.VerifyTitle#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.74 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6728_10981}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6e720b0847acfe7e4670e6df6976ae16
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at herokuapp.VerifyTitle.closeBrowser(VerifyTitle.java:43)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m38">herokuapp.VerifyTitle#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.03 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6728_10981}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6e720b0847acfe7e4670e6df6976ae16
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyTitle.launchApp(VerifyTitle.java:20)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m39">herokuapp.VerifyTitle#maximizeApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 261 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6728_10981}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6e720b0847acfe7e4670e6df6976ae16
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at herokuapp.VerifyTitle.maximizeApp(VerifyTitle.java:26)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m40">herokuapp.VerifyTitle#verifyTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;ajay-PC&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\ajay\AppData\Local\Temp\scoped_dir6728_10981}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6e720b0847acfe7e4670e6df6976ae16
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at herokuapp.VerifyTitle.verifyTitle(VerifyTitle.java:35)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

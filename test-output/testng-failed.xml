@@ -1,31 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
+  <test name="Testcase 1: ColumnHeaders(failed)">
+    <classes>
+      <class name="herokuapp.ColumnHeaders">
+        <methods>
+          <include name="maximizeApp"/>
+          <include name="closeBrowser"/>
+          <include name="launchApp"/>
+          <include name="verifyColumnHeader"/>
+        </methods>
+      </class> <!-- herokuapp.ColumnHeaders -->
+    </classes>
+  </test> <!-- Testcase 1: ColumnHeaders(failed) -->
+  <test name="Testcase 2: ValidateFooterLink(failed)">
+    <classes>
+      <class name="herokuapp.ValidateFooterLink">
+        <methods>
+          <include name="maximizeApp"/>
+          <include name="launchApp"/>
+          <include name="verifyFooterLnk"/>
+        </methods>
+      </class> <!-- herokuapp.ValidateFooterLink -->
+    </classes>
+  </test> <!-- Testcase 2: ValidateFooterLink(failed) -->
   <test name="Testcase 3: VerifyAnswerCode(failed)">
     <classes>
       <class name="herokuapp.VerifyAnswerCode">
         <methods>
+          <include name="launchApp"/>
+          <include name="maximizeApp"/>
           <include name="verifyCode"/>
+          <include name="closeBrowser"/>
         </methods>
       </class> <!-- herokuapp.VerifyAnswerCode -->
-      <class name="herokuapp.VerifyHeader">
-        <methods>
-          <include name="initSetup"/>
-        </methods>
-      </class> <!-- herokuapp.VerifyHeader -->
     </classes>
   </test> <!-- Testcase 3: VerifyAnswerCode(failed) -->
+  <test name="Testcase 4: VerifyButtons(failed)">
+    <classes>
+      <class name="herokuapp.VerifyButtons">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchApp"/>
+          <include name="maximizeApp"/>
+          <include name="validateButtons"/>
+        </methods>
+      </class> <!-- herokuapp.VerifyButtons -->
+    </classes>
+  </test> <!-- Testcase 4: VerifyButtons(failed) -->
+  <test name="Testcase 5: VerifyDeleteFunctionality(failed)">
+    <classes>
+      <class name="herokuapp.VerifyDeleteFunctionality">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="maximizeApp"/>
+          <include name="verifyTableData"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- herokuapp.VerifyDeleteFunctionality -->
+    </classes>
+  </test> <!-- Testcase 5: VerifyDeleteFunctionality(failed) -->
+  <test name="Testcase 6: VerifyEditFunctionality(failed)">
+    <classes>
+      <class name="herokuapp.VerifyEditFunctionality">
+        <methods>
+          <include name="launchApp"/>
+          <include name="closeBrowser"/>
+          <include name="verifyTableData"/>
+          <include name="maximizeApp"/>
+        </methods>
+      </class> <!-- herokuapp.VerifyEditFunctionality -->
+    </classes>
+  </test> <!-- Testcase 6: VerifyEditFunctionality(failed) -->
+  <test name="Testcase 7: VerifyFooterTxt(failed)">
+    <classes>
+      <class name="herokuapp.VerifyFooterTxt">
+        <methods>
+          <include name="maximizeApp"/>
+          <include name="launchApp"/>
+          <include name="closeBrowser"/>
+          <include name="verifyColumnHeader"/>
+        </methods>
+      </class> <!-- herokuapp.VerifyFooterTxt -->
+    </classes>
+  </test> <!-- Testcase 7: VerifyFooterTxt(failed) -->
   <test name="Testcase 8: VerifyHeader(failed)">
     <classes>
       <class name="herokuapp.VerifyHeader">
         <methods>
           <include name="verifyHeaderParagraph"/>
           <include name="verifyHeaderTxt"/>
+          <include name="closeBrowser"/>
           <include name="launchApp"/>
-          <include name="initSetup"/>
           <include name="maximizeApp"/>
         </methods>
       </class> <!-- herokuapp.VerifyHeader -->
     </classes>
   </test> <!-- Testcase 8: VerifyHeader(failed) -->
+  <test name="Testcase 9: VerifyTableData(failed)">
+    <classes>
+      <class name="herokuapp.VerifyTableData">
+        <methods>
+          <include name="launchApp"/>
+          <include name="maximizeApp"/>
+          <include name="verifyTableData"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- herokuapp.VerifyTableData -->
+    </classes>
+  </test> <!-- Testcase 9: VerifyTableData(failed) -->
+  <test name="Testcase 10: VerifyTitle(failed)">
+    <classes>
+      <class name="herokuapp.VerifyTitle">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchApp"/>
+          <include name="verifyTitle"/>
+          <include name="maximizeApp"/>
+        </methods>
+      </class> <!-- herokuapp.VerifyTitle -->
+    </classes>
+  </test> <!-- Testcase 10: VerifyTitle(failed) -->
 </suite> <!-- Failed suite [Suite] -->
