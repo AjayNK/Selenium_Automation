@@ -14,6 +14,7 @@ public class VerifyAnswerCode
 	@Test(priority=1)
 	public void launchApp()
 	{
+		//Launch Application
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/challenging_dom");
@@ -23,6 +24,7 @@ public class VerifyAnswerCode
 	@Test(priority=2)
 	public void maximizeApp()
 	{
+		//Maximize the browser
 		driver.manage().window().maximize();
 	}
 	
